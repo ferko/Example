@@ -20,23 +20,13 @@ public class ExampleTest {
     }
 
     @Test
-    public void seleniumPageTest() {
-        webDriver.navigate().to("http://www.seleniumhq.org/");
-        Assert.assertTrue(webDriver.getTitle().startsWith("Selenium"));
-        element = webDriver.findElement(By.xpath("//*[@id=\"menu_documentation\"]/a"));
-        Assert.assertEquals(element.getText(), "Documentation");
-        element.click();
-        Assert.assertTrue(webDriver.getTitle().startsWith("Selenium Documentation"));
+    public void firstTest() {
+        Assert.assertTrue(true);
     }
 
     @Test
-    public void bcitPageTest() {
-        webDriver.navigate().to("http://www.bing.com/");
-        element = webDriver.findElement(By.xpath("//*[@id=\"sb_form_q\"]"));
-        element.sendKeys("bcit");
-        element.submit();
-        element = webDriver.findElement(By.linkText("BCIT : : British Columbia Institute of Technology"));
-        element.click();
-        Assert.assertTrue(webDriver.getTitle().startsWith("BCIT"));
+    public void secondTest() {
+
+        Assert.assertTrue(true);
     }
 }
