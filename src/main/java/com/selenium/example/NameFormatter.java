@@ -7,10 +7,14 @@ package com.selenium.example;
 public class NameFormatter {
 
     public String formatName(String input) {
-        String temp;
+        String temp = "";
         String[] names = input.split(" ");
-        names[0] = names[0].substring(0,1).toUpperCase() + names[0].substring(1).toLowerCase();
-        names[1] = names[1].substring(0,1).toUpperCase() + names[1].substring(1).toLowerCase();
-        return names[0] + " " + names[1];
+        for(int i = 0; i < names.length; i++) {
+            temp += names[i].substring(0,1).toUpperCase() + names[i].substring(1).toLowerCase();
+            if(i != names.length -1) {
+                temp += " ";
+            }
+        }
+        return temp;
     }
 }

@@ -25,7 +25,9 @@
         <module name="SeleniumExample" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="SeleniumExample" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 
