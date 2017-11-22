@@ -10,6 +10,7 @@ public class ExampleTest {
 
     NameFormatter formatter = new NameFormatter();
 
+
     @Test
     public void firstTest() {
         Assert.assertEquals(formatter.formatName("frank berenyi"), "Frank Berenyi");
